@@ -38,7 +38,7 @@ param storageContainerName string = 'content'
 
 // param userStorageAccountName string = ''
 param userStorageContainerName string = 'user-content'
-param documentIntelligence string = 'doc-intel-vs' // Set in main.parameters.json **************************************** added
+//param documentIntelligence string = '' // Set in main.parameters.json **************************************** added doc-intel-vs
 //param userStorage string // Set in main.parameters.json************************* added
 
 param appServiceSkuName string // Set in main.parameters.json
@@ -258,7 +258,7 @@ module backend 'core/host/appservice.bicep' = {
       USE_USER_UPLOAD: useUserUpload
       //AZURE_USERSTORAGE_ACCOUNT: useUserUpload ? userStorage : ''  //userStorage.outputs.name
       //AZURE_USERSTORAGE_CONTAINER: useUserUpload ? userStorageContainerName : ''
-      AZURE_DOCUMENTINTELLIGENCE_SERVICE: documentIntelligence //documentIntelligence.outputs.name
+      AZURE_DOCUMENTINTELLIGENCE_SERVICE: documentIntelligenceServiceName //documentIntelligence.outputs.name
       USE_LOCAL_PDF_PARSER: useLocalPdfParser
       USE_LOCAL_HTML_PARSER: useLocalHtmlParser
     }
