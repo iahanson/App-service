@@ -10,6 +10,7 @@ param environmentName string
 param location string
 
 param appServicePlanName string = '' // Set in main.parameters.json
+param appServicePlanId string = '' // Set in main.parameters.json ****************new-to test
 param backendServiceName string = '' // Set in main.parameters.json
 param resourceGroupName string = '' // Set in main.parameters.json
 
