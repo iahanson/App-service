@@ -191,7 +191,7 @@ module backend 'core/host/appservice.bicep' = {
     name: !empty(backendServiceName) ? backendServiceName : '${abbrs.webSitesAppService}backend-${resourceToken}'
     location: location
     tags: union(tags, { 'azd-service-name': 'backend' })
-    appServicePlanId: appServicePlan.outputs.id
+    appServicePlanId: appServicePlanId //appServicePlan.outputs.id
     runtimeName: 'python'
     runtimeVersion: '3.11'
     appCommandLine: 'python3 -m gunicorn main:app'
