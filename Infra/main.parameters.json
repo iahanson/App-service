@@ -83,6 +83,9 @@
     "appServicePlanName": {
       "value": "${AZURE_APP_SERVICE_PLAN}"
     },
+    "appServicePlanId": {
+      "value": "/subscriptions/d39f2560-955b-4cfc-90d6-a3f7a96f885f/resourceGroups/vs-ai-app/providers/Microsoft.Web/serverFarms/vs-ai-app"
+    },
     "appServiceSkuName": {
       "value": "${AZURE_APP_SERVICE_SKU=B1}"
     },
