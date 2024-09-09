@@ -1,6 +1,8 @@
 <b>Simple web service application</b>
 The repo uses devcontainers, primarily for ease of access for the Azure CLI.  Devcontainers is not necessary, but in order to use the AZD you will need all the dependencies installed locally (i.e. node.js > 6.0)
 
+This repo aims to set up a Azure Web Service resource using an existing App Service Plan with parameters set so that code can be subsequently pushed to the web service for RAG applications.
+
 <b>Deployment</b>
 
 The Azure Web Service is deployed from the Infra folder
